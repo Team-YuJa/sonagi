@@ -1,0 +1,413 @@
+
+
+/*    border-top : 1px solid #ccc; */
+
+
+
+
+/* 기본 설정 */
+* {
+    outline: none;
+}
+
+
+input:hover, button:hover, select:hover {
+    transition: 0.3s;
+}
+
+
+html {
+    font-size: 13px;
+}
+
+
+body {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, b {
+    font-family: 'Noto Sans KR','Noto Sans','Noto Sans CJK KR','Spoqa Han Sans','NanumBarunGothic','Nanum Gothic','KoPub Dotum','Malgun Gothic','맑은 고딕', sans-serif;
+}
+
+
+input[type=password] {
+    font-family: sans-serif;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+}
+
+
+ol, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+p {
+    margin-bottom: 0.8rem;
+}
+
+
+ol {
+    margin: 0 !important;
+    margin-left: 2.2rem !important;
+    margin-right: 1rem !important;
+    list-style-image: none;
+}
+
+
+pre {
+    display: block;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f8fa;
+    border: 1px solid #e1e8ed;
+    border-radius: 0.35rem;
+    padding: 0.8rem;
+    white-space: pre-wrap;
+}
+
+a:focus {
+    outline: 0;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+ul {
+    list-style-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%23373a3c%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+}
+
+img {
+    max-width: 100%;
+/*    height: auto;*/
+    margin: 0;
+}
+
+th[rowspan], td[rowspan] {
+    position: relative;
+}
+
+th[rowspan]:after, td[rowspan]:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 1px;
+    height: 100%;
+}
+
+input[type=search] {
+    -webkit-appearance: none; /* iOS 잡다한 css설정 제거 */
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #e1e8ed;
+    padding: 0.5rem;
+}
+
+hr {
+    border-top: 1px solid #e1e8ed;
+}
+
+
+html input[type=button]:hover, html input[type=submit]:hover, button:hover, #mw-editform-cancel:hover {
+    background-color: #449d44;
+}
+
+label {
+    vertical-align: middle;
+    word-break: keep-all;
+}
+
+del, s, strike {
+    color: gray;
+}
+
+
+
+
+/* 메인 */
+
+.sonagi {
+    background-color: #f5f5f5;
+}
+
+
+.sonagi .nav-wrapper .navbar, .sonagi .content-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.sonagi .nav-wrapper {
+    min-height: 4.8rem;
+    background-color: #236758;
+    z-index: 1001;
+}
+
+.sonagi .nav-wrapper .navbar {
+    padding: 0 1rem;
+    border: 0;
+    border-radius: 0;
+}
+
+.sonagi .nav-wrapper .navbar .navbar-brand {
+    height: 3.8rem;
+}
+
+.sonagi .nav-wrapper .navbar .navbar-nav .nav-item {
+    margin: 0;
+}
+
+.sonagi .nav-wrapper .navbar .navbar-nav .nav-item .fa {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.sonagi .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1.7rem 4.8rem;
+    line-height: 1.4rem;
+}
+
+.sonagi .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover, .sonagi .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus {
+    background-color: #3aad92;
+    transition: 0.3s;
+}
+
+
+
+
+/* 왼쪽 메뉴 */
+.sonagi .content-wrapper .sonagi-sidebar {
+    float: right;
+    width: 15rem;
+    position: relative;
+}
+
+.sonagi .content-wrapper .sonagi-sidebar .sonagi-right {
+    position: fixed;
+    z-index: 999;
+}
+
+.recent-item {
+    color: #fff;
+}
+
+
+.sonagi .content-wrapper .sonagi-sidebar .ads {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    top: 25.73rem;
+    width: 15rem;
+}
+
+.adsmain {
+    background-color: gray;
+    height: 600px;
+}
+
+
+.item3 {
+    background: #236758;
+}
+.mainNotice {
+    position: relative;
+    margin-right: 20px;
+    padding: 25px;
+    width: 100%;
+    height: 20rem;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.bx-wrapper {
+    padding-bottom: 3rem;
+    padding-top: 10px;
+}
+
+
+.label {
+    color: #fff;
+    text-align: right;
+}
+
+.login_wrap {
+    position: relative;
+    border: 2px solid #236758;
+    color: #333;
+    background-color: #f2f0f0;
+}
+
+.login_w {
+    padding-bottom: 2rem;
+}
+
+.user_info {
+    line-height: 44px;
+    font-size: 12px;
+    color: #236758;
+    padding: 15px 1px ;
+    text-align: center;
+}
+
+
+.info_item {
+    color: #236758;
+    font-size: 16px;
+}
+
+.info_item2 {
+    text-align: right;
+    color: #236758;
+}
+
+.loging1 {
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    content: " ";
+    width: 14.9rem;
+    display: block;
+    border-bottom: 2px solid #236758;
+}
+
+
+.profile {
+    display: block;
+}
+
+.profile-img {
+    border-radius: 70%;
+}
+
+.name {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.account-name {
+    color: #030303;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+
+.gg {
+    color: #236758;
+}
+
+/* 검색 */
+
+.img_logo {
+	margin-right: 15px;
+	max-width: 150px;    
+	margin-top: 20px;
+}
+
+.search_box {
+    width: 100%;
+    height: 50px;
+    border: 6px solid #236758;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.search_box input {
+    width: 90%;
+    height: 37px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+	
+}
+
+.search_box button {
+	width: 10%;
+	height: 46px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: #328170;
+}
+
+.search_box i {
+	color: white;
+	font-size: 22px;
+	text-align: center;
+}
+
+/* 본문 */
+
+.sonagi .content-wrapper .sonagi-content {
+    padding: 0;
+    padding-right: 17rem;
+    height: 100%
+}
+
+.content-coler {
+    background-color: #fff;
+    min-height: 1112px;
+    padding: 1rem 1rem;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.content-tools {
+    float: right;
+}
+
+.sonagi-content-header{
+    padding-bottom: 5rem;
+}
+
+/* 하단 */
+.sonagi-footer {
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer {
+    border-top: 1px solid #ccc;
+    background-color: #EEEEEE;
+}
+
+/* float: left;
